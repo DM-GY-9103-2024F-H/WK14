@@ -3,6 +3,7 @@ ipywidgets
 matplotlib
 pandas
 scikit-learn
+torchtext
 torch
 torchvision
 tqdm
