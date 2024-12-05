@@ -6,3 +6,4 @@ _WK*.ipynb
 *.py.*
 *.pyc.*
 data/
+!WK14_utils.py
