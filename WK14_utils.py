@@ -19,6 +19,12 @@ except:
   except:
     print("ERROR:", "No tokenizer found!")
 
+def count_parameters(m):
+  psum = 0
+  for p in m.parameters():
+    psum += p.numel()
+  return f"{psum:,}"
+
 class TextUtils():
   stop_1000_url = "https://gist.githubusercontent.com/rg089/35e00abf8941d72d419224cfd5b5925d/raw/12d899b70156fd0041fa9778d657330b024b959c/stopwords.txt"
   stop_100_url  = "https://gist.githubusercontent.com/sebleier/554280/raw/7e0e4a1ce04c2bb7bd41089c9821dbcf6d0c786c/NLTK's%2520list%2520of%2520english%2520stopwords"
